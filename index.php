@@ -18,7 +18,7 @@ if (!isset($_SESSION['user_id'])) die('Not logged in');
 function httpGet($Url, $headers = array()){
 	$ch=curl_init();
 	curl_setopt($ch, CURLOPT_URL, $Url);
-    curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+	curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
 	curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 	curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
 	$result = curl_exec($ch);
