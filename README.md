@@ -4,7 +4,7 @@ _PoOr.Scraper_ is a PHP Script that returns json string with Open Graph Metatags
 
 	http://www.example.com/index.php?id=www.domaintoscrape.com
 
-	return:
+return:
 
 	{
 		"description": "URL Description",
