@@ -41,7 +41,7 @@ preg_match("#^(?P<value>https?:\/\/[^\/]*).*$#", $info['url'], $page_root);
 
 if(!preg_match('#\<meta.*property="og:image.*content="(?P<value>[^"]+)".*\>#i', $content, $scraped_img))
 	if(!preg_match('#\<meta.*content="(?P<value>[^"]+)".*property="og:image.*\>#i', $content, $scraped_img))
-		preg_match_all('#\<img.*src="(?P<value>[^"]+\.jpe?g)".*\>#i', $content, $scraped_img);
+		preg_match_all('#\<img.*src="(?P<value>[^"]+)".*\>#i', $content, $scraped_img);
 
 
 if(!preg_match('#\<meta.*property="og:title.*content="(?P<value>.+)".*\>#i', $content, $title))
